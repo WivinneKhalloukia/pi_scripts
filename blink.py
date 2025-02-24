@@ -6,9 +6,9 @@ import sys
 # Define a function called blink that takes a pin number as an argument
 def blink(_pin):
    wiringpi.digitalWrite(_pin, 1)    # Write 1 ( HIGH ) to pin, which turns on the LED
-   time.sleep(0.01)                   # Wait for 0.5 seconds
+   time.sleep(0.1)                   # Wait for 0.5 seconds
    wiringpi.digitalWrite(_pin, 0)    # Write 0 ( LOW ) to pin, which turns off the LED
-   time.sleep(0.01)                   # Wait for another 0.5 seconds
+   time.sleep(0.1)                   # Wait for another 0.5 seconds
 
 # Initialize the wiringpi library and set pin 2 to output mode
 print("Start")                        # Print "Start" to the console

@@ -17,7 +17,7 @@ wiringpi.wiringPiSetup()              # Initialize the wiringpi library
 wiringpi.pinMode(pin, 1)              # Set pin 2 to mode 1 ( OUTPUT ), which means it can send signals
 
 # Blink the LED connected to pin 2 for 10 times
-for i in range(0,100):                 # Create a loop that repeats 10 times
+while True:                 # Create a loop that repeats 10 times
    blink(pin)                        # Call the blink function with pin 2 as the argument
 
 # Print "Done" to the console when the loop is finished

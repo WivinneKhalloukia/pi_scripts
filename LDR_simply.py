@@ -8,10 +8,9 @@ wiringpi.wiringPiSetup()
 wiringpi.pinMode (pinSwitch, 0)
 
 while True:
-    print(wiringpi.digitalRead(pinSwitch))
-    if (wiringpi.digitalRead(pinSwitch) == 0):
+    if(wiringpi.digitalRead(pinSwitch) == 0):
         time.sleep(0.5)
-        print("Light")
+        print("Ohno, the sun!")
     else:
-        print("Dark")
+        print("It's dark as fuck in here")
         time.sleep(0.5)

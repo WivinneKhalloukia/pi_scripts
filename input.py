@@ -18,7 +18,7 @@ while True:
             status = 1
         else: status = 0
     else:
-        print("Button released")
+        print("Button pressed -> led is off")
         time.sleep(0.3)
         print("led is " , status)
         wiringpi.digitalWrite (pinLed, status)

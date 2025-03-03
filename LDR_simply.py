@@ -4,7 +4,7 @@ import sys
 
 print("Start")
 pinSwitch = 1
-wiringpi.wiringSetup()
+wiringpi.wiringPiSetup()
 wiringpi.pinMode (pinSwitch, 1)
 
 while True:

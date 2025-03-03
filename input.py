@@ -12,9 +12,9 @@ wiringpi.pinMode (pinSwitch, 0)
 
 while True:
     if(wiringpi.digitalRead(pinSwitch) == 0):
-        print("Button Pressed -> led is on")
         time.sleep(0.3)
         if status == 0:
+            print("Button Pressed -> led is on")
             status = 1
         else: status = 0
     else:

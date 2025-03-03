@@ -20,4 +20,5 @@ while True:
     else:
         print("Button released")
         time.sleep(0.3)
+        print("led is " , status)
         wiringpi.digitalWrite (pinLed, status)

@@ -13,10 +13,14 @@ def blink(_pin):
 # Initialize the wiringpi library and set pin 2 to output mode
 print("Start")                        # Print "Start" to the console
 pin = 2                               # Assign the value 2 to the variable pin
-
+pin1 = 4
+pin2 = 5
+pin3 = 6
 wiringpi.wiringPiSetup()              # Initialize the wiringpi library
 wiringpi.pinMode(pin, 1)              # Set pin 2 to mode 1 ( OUTPUT ), which means it can send signals
-
+wiringpi.pinMode(pin1, 1)
+wiringpi.pinMode(pin2, 1)
+wiringpi.pinMode(pin3, 1)
 
 # Blink the LED connected to pin 2 for infinite times
 for i in range(0,10):                 # Create a loop that goes infinitely (ctrl+c in terminal to stop)
